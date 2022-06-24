@@ -1,0 +1,12 @@
+{
+  "tpAddressId": 1,
+  "auditFormId": 1,
+  "auditQuestions": [
+    {
+      "index": 1,
+      "auditQuestionId": 1
+    }
+  ],
+  "action": "SAVE",
+  "tpRegId": 1
+}

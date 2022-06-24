@@ -1,0 +1,926 @@
+[
+	{
+		"de_audit_form": {
+			"id": 2,
+			"name": {
+				"ru": "Комплексная проверка",
+				"kk": "Кешенді тексеру",
+				"qq": "Keşendі tekseru"
+			}
+		},
+		"de_audit_kind": {
+			"id": 8,
+			"name": {
+				"ru": "По особому порядку на основе оценки степени риска",
+				"kk": "Тәуекел дәрежесін бағалау негізінде ерекше тәртіп",
+				"qq": "Täuekelder därejesіn bağalau negіzіnde"
+			}
+		},
+		"de_audit_question": {
+			"id": 13,
+			"name": {
+				"ru": "исполнения налогового обязательства по всем видам налогов и других обязательных платежей в бюджет, полноты и своевременности исчисления, удержания и перечисления обязательных пенсионных взносов, полноты и своевременности исчисления и уплаты социальных отчислений",
+				"kk": "cалықтардың және бюджетке төленетін басқа да міндетті төлемдердің барлық түрлері бойынша салық міндеттемесінің орындалуы, міндетті зейнетақы жарналарын толық және уақыттылы есептеу, ұстап қалу және аудару және әлеуметтік аударымдарды толық және уақыттылы есептеу және төлеу мәселелері",
+				"qq": "salyqtardyŋ jäne bdjetke tölenetіn basqa da mіndettі tölemderdіŋ barlyq türlerі boiynşa salyq mіndettemesіnіŋ oryndaluy, mіndettі zeinetaqy jarnalaryn tolyq jäne uaqyttyly esepteu, ūstap qalu jäne audaru jäne äleumettіk audarymdardy tolyq jäne uaqyttyly esepteu jäne töleu mäselelerі"
+			}
+		},
+		"tp_reg": {
+			"id": 1,
+			"iinBin": "889718705849",
+			"rnn": null,
+			"tpType": "FL",
+			"tpName": {
+				"ru": "Фишер Александр Маркович",
+				"kk": "Фишер Александр Маркович",
+				"qq": "Фишер Александр Маркович"
+			},
+			"tpAddressId": 1,
+			"fullAddress": {
+				"ru": "1111222233334444, Z10K5F0, Нур-Султан, Азербайжан Мамбетова, 24, 10",
+				"kk": "1111222233334444, Z10K5F0, Нұр-Сұлтан, Әзірбайжан Мәмбетов, 24, 10",
+				"qq": null
+			},
+			"detailedAddress": {
+				"arCode": "1111222233334444",
+				"postalCode": "Z10K5F0",
+				"region": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"city": {
+					"ru": "Нур-Султан",
+					"kk": "Нұр-Сұлтан",
+					"qq": null
+				},
+				"village": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"street": {
+					"ru": "Азербайжан Мамбетова",
+					"kk": "Әзірбайжан Мәмбетов",
+					"qq": null
+				},
+				"house": {
+					"ru": "24",
+					"kk": "24",
+					"qq": null
+				},
+				"apartment": {
+					"ru": "10",
+					"kk": "10",
+					"qq": null
+				}
+			}
+		}
+	},
+	{
+		"de_audit_form": {
+			"id": 1,
+			"name": {
+				"ru": "Тематическая проверка",
+				"kk": "Тақырыптық тексеру",
+				"qq": "Taqyryptyq tekseru"
+			}
+		},
+		"de_audit_kind": {
+			"id": 8,
+			"name": {
+				"ru": "По особому порядку на основе оценки степени риска",
+				"kk": "Тәуекел дәрежесін бағалау негізінде ерекше тәртіп",
+				"qq": "Täuekelder därejesіn bağalau negіzіnde"
+			}
+		},
+		"de_audit_question": {
+			"id": 1,
+			"name": {
+				"ru": "государственного регулирования производства и оборота отдельных видов подакцизных товаров",
+				"kk": "акцизделетін тауарлардың жекелеген түрлерінің өндірісі мен айналымын мемлекеттік реттеу",
+				"qq": "aksizdeletіn tauarlardyŋ jekelegen türlerіnіŋ öndіrіsі men ainalymyn memlekettіk retteu"
+			}
+		},
+		"tp_reg": {
+			"id": 2,
+			"iinBin": "915661024988",
+			"rnn": null,
+			"tpType": "FL",
+			"tpName": {
+				"ru": "Гурьев Арсен Николаевич",
+				"kk": "Гурьев Арсен Николаевич",
+				"qq": "Гурьев Арсен Николаевич"
+			},
+			"tpAddressId": 2,
+			"fullAddress": {
+				"ru": "1111222233335555, Z01G8K7, Нур-Султан, Шарль де Голль, 2, 17",
+				"kk": "1111222233335555, Z01G8K7, Нұр-Сұлтан, Шарль де Голль, 2, 17",
+				"qq": null
+			},
+			"detailedAddress": {
+				"arCode": "1111222233335555",
+				"postalCode": "Z01G8K7",
+				"region": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"city": {
+					"ru": "Нур-Султан",
+					"kk": "Нұр-Сұлтан",
+					"qq": null
+				},
+				"village": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"street": {
+					"ru": "Шарль де Голль",
+					"kk": "Шарль де Голль",
+					"qq": null
+				},
+				"house": {
+					"ru": "2",
+					"kk": "2",
+					"qq": null
+				},
+				"apartment": {
+					"ru": "17",
+					"kk": "17",
+					"qq": null
+				}
+			}
+		}
+	},
+	{
+		"de_audit_form": {
+			"id": 1,
+			"name": {
+				"ru": "Тематическая проверка",
+				"kk": "Тақырыптық тексеру",
+				"qq": "Taqyryptyq tekseru"
+			}
+		},
+		"de_audit_kind": {
+			"id": 8,
+			"name": {
+				"ru": "По особому порядку на основе оценки степени риска",
+				"kk": "Тәуекел дәрежесін бағалау негізінде ерекше тәртіп",
+				"qq": "Täuekelder därejesіn bağalau negіzіnde"
+			}
+		},
+		"de_audit_question": {
+			"id": 2,
+			"name": {
+				"ru": "исполнения налогового обязательства по отдельным видам налогов и (или) других обязательных платежей в бюджет",
+				"kk": "салықтардың және (немесе) бюджетке төленетін басқа да міндетті төлемдердің жекелеген түрлері бойынша салық міндеттемесінің орындалуы",
+				"qq": "salyqtardyŋ jäne (nemese) bdjetke tölenetіn basqa da mіndettі tölemderdіŋ jekelegen türlerі boiynşa salyq mіndettemesіnіŋ oryndaluy"
+			}
+		},
+		"tp_reg": {
+			"id": 3,
+			"iinBin": "915661024988",
+			"rnn": null,
+			"tpType": "IP",
+			"tpName": {
+				"ru": "ИП Гурьев",
+				"kk": null,
+				"qq": null
+			},
+			"tpAddressId": 3,
+			"fullAddress": {
+				"ru": "1111222233336666, Z05K7B3, Нур-Султан, Сыганак, 29, 35",
+				"kk": "1111222233336666, Z05K7B3, Нұр-Сұлтан, Сығанақ, 29, 35",
+				"qq": null
+			},
+			"detailedAddress": {
+				"arCode": "1111222233336666",
+				"postalCode": "Z05K7B3",
+				"region": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"city": {
+					"ru": "Нур-Султан",
+					"kk": "Нұр-Сұлтан",
+					"qq": null
+				},
+				"village": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"street": {
+					"ru": "Сыганак",
+					"kk": "Сығанақ",
+					"qq": null
+				},
+				"house": {
+					"ru": "29",
+					"kk": "29",
+					"qq": null
+				},
+				"apartment": {
+					"ru": "35",
+					"kk": "35",
+					"qq": null
+				}
+			}
+		}
+	},
+	{
+		"de_audit_form": {
+			"id": 1,
+			"name": {
+				"ru": "Тематическая проверка",
+				"kk": "Тақырыптық тексеру",
+				"qq": "Taqyryptyq tekseru"
+			}
+		},
+		"de_audit_kind": {
+			"id": 8,
+			"name": {
+				"ru": "По особому порядку на основе оценки степени риска",
+				"kk": "Тәуекел дәрежесін бағалау негізінде ерекше тәртіп",
+				"qq": "Täuekelder därejesіn bağalau negіzіnde"
+			}
+		},
+		"de_audit_question": {
+			"id": 3,
+			"name": {
+				"ru": "исполнения банками и организациями, осуществляющими отдельные виды банковских операций, обязанностей, установленных настоящим Кодексом, а также Законами Республики Казахстан 'Об обязательном социальном страховании' и 'О пенсионном обеспечении в Республике Казахстан'",
+				"kk": "банктердің және банк операцияларының жекелеген түрлерін жүзеге асыратын ұйымдардың осы Кодексте, сондай-ақ 'Міндетті әлеуметтік сақтандыру туралы' және 'қазақстан Республикасында зейнетақымен қамсыздандыру туралы' қазақстан Республикасының Заңдарында белгіленген міндеттерді орындауы",
+				"qq": "bankterdіŋ jäne bank operasiяlarynyŋ jekelegen türlerіn jüzege asyratyn ūiymdardyŋ osy Kodekste, sondai-aq 'Mіndettі äleumettіk saqtandyru turaly' jäne 'qazaqstan Respublikasynda zeinetaqymen qamsyzdandyru turaly' qazaqstan Respublikasynyŋ Zaŋdarynda belgіlengen mіndetterdі oryndauy"
+			}
+		},
+		"tp_reg": {
+			"id": 6,
+			"iinBin": "100440010458",
+			"rnn": "620200356694",
+			"tpType": "UL",
+			"tpName": {
+				"ru": "Товарищество с ограниченной ответственностью \"Astana Motor Astana\"",
+				"kk": "\"Astana Motor Astana\" жауапкершілігі шектеулі серіктестігі",
+				"qq": null
+			},
+			"tpAddressId": 6,
+			"fullAddress": {
+				"ru": "1111222233339999, Z05H9A7, Нур-Султан, Кунаева, 10, 32",
+				"kk": "1111222233339999, Z05H9A7, Нұр-Сұлтан, Қонаев, 10, 32",
+				"qq": null
+			},
+			"detailedAddress": {
+				"arCode": "1111222233339999",
+				"postalCode": "Z05H9A7",
+				"region": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"city": {
+					"ru": "Нур-Султан",
+					"kk": "Нұр-Сұлтан",
+					"qq": null
+				},
+				"village": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"street": {
+					"ru": "Кунаева",
+					"kk": "Қонаев",
+					"qq": null
+				},
+				"house": {
+					"ru": "10",
+					"kk": "10",
+					"qq": null
+				},
+				"apartment": {
+					"ru": "32",
+					"kk": "32",
+					"qq": null
+				}
+			}
+		}
+	},
+	{
+		"de_audit_form": {
+			"id": 1,
+			"name": {
+				"ru": "Тематическая проверка",
+				"kk": "Тақырыптық тексеру",
+				"qq": "Taqyryptyq tekseru"
+			}
+		},
+		"de_audit_kind": {
+			"id": 8,
+			"name": {
+				"ru": "По особому порядку на основе оценки степени риска",
+				"kk": "Тәуекел дәрежесін бағалау негізінде ерекше тәртіп",
+				"qq": "Täuekelder därejesіn bağalau negіzіnde"
+			}
+		},
+		"de_audit_question": {
+			"id": 4,
+			"name": {
+				"ru": "трансфертного ценообразования",
+				"kk": "трансферттік баға белгілеу",
+				"qq": "transferttіk bağa belgіleu"
+			}
+		},
+		"tp_reg": {
+			"id": 7,
+			"iinBin": "210140012314",
+			"rnn": null,
+			"tpType": "UL",
+			"tpName": {
+				"ru": "Товарищество с ограниченной ответственностью \"МАГНИТ\"",
+				"kk": null,
+				"qq": null
+			},
+			"tpAddressId": 7,
+			"fullAddress": {
+				"ru": "1111222233331111, Z05K6E6, Нур-Султан, Сарайшык, 5, 47",
+				"kk": "1111222233331111, Z05K6E6, Нұр-Сұлтан, Сарайшық, 5, 47",
+				"qq": null
+			},
+			"detailedAddress": {
+				"arCode": "1111222233331111",
+				"postalCode": "Z05K6E6",
+				"region": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"city": {
+					"ru": "Нур-Султан",
+					"kk": "Нұр-Сұлтан",
+					"qq": null
+				},
+				"village": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"street": {
+					"ru": "Сарайшык",
+					"kk": "Сарайшық",
+					"qq": null
+				},
+				"house": {
+					"ru": "5",
+					"kk": "5",
+					"qq": null
+				},
+				"apartment": {
+					"ru": "47",
+					"kk": "47",
+					"qq": null
+				}
+			}
+		}
+	},
+	{
+		"de_audit_form": {
+			"id": 1,
+			"name": {
+				"ru": "Тематическая проверка",
+				"kk": "Тақырыптық тексеру",
+				"qq": "Taqyryptyq tekseru"
+			}
+		},
+		"de_audit_kind": {
+			"id": 8,
+			"name": {
+				"ru": "По особому порядку на основе оценки степени риска",
+				"kk": "Тәуекел дәрежесін бағалау негізінде ерекше тәртіп",
+				"qq": "Täuekelder därejesіn bağalau negіzіnde"
+			}
+		},
+		"de_audit_question": {
+			"id": 5,
+			"name": {
+				"ru": "полноты и своевременности исчисления, удержания и перечисления обязательных пенсионных взносов, а также полноты и своевременности исчисления и уплаты социальных отчислений",
+				"kk": "міндетті зейнетақы жарналарының толық және уақтылы есептеу, ұстап қалу және аудару, сондай-ақ әлеуметтік аударымдарды толық және уақтылы есептеу және төлеу",
+				"qq": "mіndettі zeinetaqy jarnalarynyŋ tolyq jäne uaqtyly esepteu, ūstap qalu jäne audaru, sondai-aq äleumettіk audarymdardy tolyq jäne uaqtyly esepteu jäne töleu"
+			}
+		},
+		"tp_reg": {
+			"id": 8,
+			"iinBin": "990441003038",
+			"rnn": null,
+			"tpType": "UL",
+			"tpName": {
+				"ru": "Акмолинский областной филиал общественного объединения \"Партия \"Нұр Отан\"",
+				"kk": null,
+				"qq": null
+			},
+			"tpAddressId": 8,
+			"fullAddress": {
+				"ru": "1111222233332222, Z00Y4T8, Нур-Султан, Жумабека Ташенова, 8, 74",
+				"kk": "1111222233332222, Z00Y4T8, Нұр-Сұлтан, Жұмабек Ташенов, 8, 74",
+				"qq": null
+			},
+			"detailedAddress": {
+				"arCode": "1111222233332222",
+				"postalCode": "Z00Y4T8",
+				"region": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"city": {
+					"ru": "Нур-Султан",
+					"kk": "Нұр-Сұлтан",
+					"qq": null
+				},
+				"village": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"street": {
+					"ru": "Жумабека Ташенова",
+					"kk": "Жұмабек Ташенов",
+					"qq": null
+				},
+				"house": {
+					"ru": "8",
+					"kk": "8",
+					"qq": null
+				},
+				"apartment": {
+					"ru": "74",
+					"kk": "74",
+					"qq": null
+				}
+			}
+		}
+	},
+	{
+		"de_audit_form": {
+			"id": 1,
+			"name": {
+				"ru": "Тематическая проверка",
+				"kk": "Тақырыптық тексеру",
+				"qq": "Taqyryptyq tekseru"
+			}
+		},
+		"de_audit_kind": {
+			"id": 8,
+			"name": {
+				"ru": "По особому порядку на основе оценки степени риска",
+				"kk": "Тәуекел дәрежесін бағалау негізінде ерекше тәртіп",
+				"qq": "Täuekelder därejesіn bağalau negіzіnde"
+			}
+		},
+		"de_audit_question": {
+			"id": 6,
+			"name": {
+				"ru": "определения взаиморасчетов между налогоплательщиком (налоговым агентом) и его дебиторами",
+				"kk": "салық төлеушілер (салық агенті) мен оның дебиторлары арасындағы өзара есеп айырысуларды айқындау",
+				"qq": "salyq töleuşіler (salyq agentі) men onyŋ debitorlary arasyndağy özara esep aiyrysulardy aiqyndau"
+			}
+		},
+		"tp_reg": {
+			"id": 9,
+			"iinBin": "140950029062",
+			"rnn": "600900687596",
+			"tpType": "UL",
+			"tpName": {
+				"ru": "Акционерное общество \"ARCUS\"",
+				"kk": null,
+				"qq": null
+			},
+			"tpAddressId": 9,
+			"fullAddress": {
+				"ru": "1111222233334444, Z10H9B8, Нур-Султан, Сарыарка, 4, 45",
+				"kk": "1111222233334444, Z10H9B8, Нұр-Сұлтан, Сарыарқа, 4, 45",
+				"qq": null
+			},
+			"detailedAddress": {
+				"arCode": "1111222233334444",
+				"postalCode": "Z10H9B8",
+				"region": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"city": {
+					"ru": "Нур-Султан",
+					"kk": "Нұр-Сұлтан",
+					"qq": null
+				},
+				"village": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"street": {
+					"ru": "Сарыарка",
+					"kk": "Сарыарқа",
+					"qq": null
+				},
+				"house": {
+					"ru": "4",
+					"kk": "4",
+					"qq": null
+				},
+				"apartment": {
+					"ru": "45",
+					"kk": "45",
+					"qq": null
+				}
+			}
+		}
+	},
+	{
+		"de_audit_form": {
+			"id": 1,
+			"name": {
+				"ru": "Тематическая проверка",
+				"kk": "Тақырыптық тексеру",
+				"qq": "Taqyryptyq tekseru"
+			}
+		},
+		"de_audit_kind": {
+			"id": 8,
+			"name": {
+				"ru": "По особому порядку на основе оценки степени риска",
+				"kk": "Тәуекел дәрежесін бағалау негізінде ерекше тәртіп",
+				"qq": "Täuekelder därejesіn bağalau negіzіnde"
+			}
+		},
+		"de_audit_question": {
+			"id": 8,
+			"name": {
+				"ru": "по вопросам определения налогового обязательства по сделке (сделкам), совершение которой (которых) признано судом осуществленными без намерения осуществлять предпринимательскую деятельность",
+				"kk": "жасалуы сотпен кәсіпкерлік қызметті жүзеге асыру ниетінсіз жүзеге асырылған деп танылған мәміле (мәмілелер) бойынша салық міндеттемесін айқындау",
+				"qq": "jasaluy sotpen käsіpkerlіk qyzmettі jüzege asyru nietіnsіz jüzege asyrylğan dep tanylğan mämіle (mämіleler) boiynşa salyq mіndettemesіn aiqyndau"
+			}
+		},
+		"tp_reg": {
+			"id": 1,
+			"iinBin": "889718705849",
+			"rnn": null,
+			"tpType": "FL",
+			"tpName": {
+				"ru": "Фишер Александр Маркович",
+				"kk": "Фишер Александр Маркович",
+				"qq": "Фишер Александр Маркович"
+			},
+			"tpAddressId": 1,
+			"fullAddress": {
+				"ru": "1111222233334444, Z10K5F0, Нур-Султан, Азербайжан Мамбетова, 24, 10",
+				"kk": "1111222233334444, Z10K5F0, Нұр-Сұлтан, Әзірбайжан Мәмбетов, 24, 10",
+				"qq": null
+			},
+			"detailedAddress": {
+				"arCode": "1111222233334444",
+				"postalCode": "Z10K5F0",
+				"region": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"city": {
+					"ru": "Нур-Султан",
+					"kk": "Нұр-Сұлтан",
+					"qq": null
+				},
+				"village": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"street": {
+					"ru": "Азербайжан Мамбетова",
+					"kk": "Әзірбайжан Мәмбетов",
+					"qq": null
+				},
+				"house": {
+					"ru": "24",
+					"kk": "24",
+					"qq": null
+				},
+				"apartment": {
+					"ru": "10",
+					"kk": "10",
+					"qq": null
+				}
+			}
+		}
+	},
+	{
+		"de_audit_form": {
+			"id": 1,
+			"name": {
+				"ru": "Тематическая проверка",
+				"kk": "Тақырыптық тексеру",
+				"qq": "Taqyryptyq tekseru"
+			}
+		},
+		"de_audit_kind": {
+			"id": 8,
+			"name": {
+				"ru": "По особому порядку на основе оценки степени риска",
+				"kk": "Тәуекел дәрежесін бағалау негізінде ерекше тәртіп",
+				"qq": "Täuekelder därejesіn bağalau negіzіnde"
+			}
+		},
+		"de_audit_question": {
+			"id": 9,
+			"name": {
+				"ru": "правомерности применения положений международных договоров (соглашений)",
+				"kk": "халықаралық шарттардың (келісімдердің) ережелерін қолдану заңдылығы",
+				"qq": "halyqaralyq şarttardyŋ (kelіsіmderdіŋ) erejelerіn qoldanu zaŋdylyğy"
+			}
+		},
+		"tp_reg": {
+			"id": 1,
+			"iinBin": "889718705849",
+			"rnn": null,
+			"tpType": "FL",
+			"tpName": {
+				"ru": "Фишер Александр Маркович",
+				"kk": "Фишер Александр Маркович",
+				"qq": "Фишер Александр Маркович"
+			},
+			"tpAddressId": 1,
+			"fullAddress": {
+				"ru": "1111222233334444, Z10K5F0, Нур-Султан, Азербайжан Мамбетова, 24, 10",
+				"kk": "1111222233334444, Z10K5F0, Нұр-Сұлтан, Әзірбайжан Мәмбетов, 24, 10",
+				"qq": null
+			},
+			"detailedAddress": {
+				"arCode": "1111222233334444",
+				"postalCode": "Z10K5F0",
+				"region": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"city": {
+					"ru": "Нур-Султан",
+					"kk": "Нұр-Сұлтан",
+					"qq": null
+				},
+				"village": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"street": {
+					"ru": "Азербайжан Мамбетова",
+					"kk": "Әзірбайжан Мәмбетов",
+					"qq": null
+				},
+				"house": {
+					"ru": "24",
+					"kk": "24",
+					"qq": null
+				},
+				"apartment": {
+					"ru": "10",
+					"kk": "10",
+					"qq": null
+				}
+			}
+		}
+	},
+	{
+		"de_audit_form": {
+			"id": 1,
+			"name": {
+				"ru": "Тематическая проверка",
+				"kk": "Тақырыптық тексеру",
+				"qq": "Taqyryptyq tekseru"
+			}
+		},
+		"de_audit_kind": {
+			"id": 8,
+			"name": {
+				"ru": "По особому порядку на основе оценки степени риска",
+				"kk": "Тәуекел дәрежесін бағалау негізінде ерекше тәртіп",
+				"qq": "Täuekelder därejesіn bağalau negіzіnde"
+			}
+		},
+		"de_audit_question": {
+			"id": 10,
+			"name": {
+				"ru": "подтверждения достоверности сумм налога на добавленную стоимость, предъявленных к возврату",
+				"kk": "қайтаруға ұсынылған қосылған құн салығының сомаларының дұрыстығын растау",
+				"qq": "qaitaruğa ūsynylğan qosylğan qūn salyğynyŋ somalarynyŋ dūrystyğyn rastau"
+			}
+		},
+		"tp_reg": {
+			"id": 1,
+			"iinBin": "889718705849",
+			"rnn": null,
+			"tpType": "FL",
+			"tpName": {
+				"ru": "Фишер Александр Маркович",
+				"kk": "Фишер Александр Маркович",
+				"qq": "Фишер Александр Маркович"
+			},
+			"tpAddressId": 1,
+			"fullAddress": {
+				"ru": "1111222233334444, Z10K5F0, Нур-Султан, Азербайжан Мамбетова, 24, 10",
+				"kk": "1111222233334444, Z10K5F0, Нұр-Сұлтан, Әзірбайжан Мәмбетов, 24, 10",
+				"qq": null
+			},
+			"detailedAddress": {
+				"arCode": "1111222233334444",
+				"postalCode": "Z10K5F0",
+				"region": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"city": {
+					"ru": "Нур-Султан",
+					"kk": "Нұр-Сұлтан",
+					"qq": null
+				},
+				"village": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"street": {
+					"ru": "Азербайжан Мамбетова",
+					"kk": "Әзірбайжан Мәмбетов",
+					"qq": null
+				},
+				"house": {
+					"ru": "24",
+					"kk": "24",
+					"qq": null
+				},
+				"apartment": {
+					"ru": "10",
+					"kk": "10",
+					"qq": null
+				}
+			}
+		}
+	},
+	{
+		"de_audit_form": {
+			"id": 1,
+			"name": {
+				"ru": "Тематическая проверка",
+				"kk": "Тақырыптық тексеру",
+				"qq": "Taqyryptyq tekseru"
+			}
+		},
+		"de_audit_kind": {
+			"id": 8,
+			"name": {
+				"ru": "По особому порядку на основе оценки степени риска",
+				"kk": "Тәуекел дәрежесін бағалау негізінде ерекше тәртіп",
+				"qq": "Täuekelder därejesіn bağalau negіzіnde"
+			}
+		},
+		"de_audit_question": {
+			"id": 11,
+			"name": {
+				"ru": "возврата уплаченного подоходного налога из бюджета или условного банковского вклада на основании налогового заявления нерезидента и международного договора об избежании двойного налогообложения",
+				"kk": "резидент еместің салықтық өтініші және қосарланған салық салуды болдырмау туралы халықаралық шарт негізінде бюджеттен төленген табыс салығын немесе шартты банктік салымды қайтару",
+				"qq": "rezident emestіŋ salyqtyq ötіnіşі jäne qosarlanğan salyq saludy boldyrmau turaly halyqaralyq şart negіzіnde bdjetten tölengen tabys salyğyn nemese şartty banktіk salymdy qaitaru"
+			}
+		},
+		"tp_reg": {
+			"id": 1,
+			"iinBin": "889718705849",
+			"rnn": null,
+			"tpType": "FL",
+			"tpName": {
+				"ru": "Фишер Александр Маркович",
+				"kk": "Фишер Александр Маркович",
+				"qq": "Фишер Александр Маркович"
+			},
+			"tpAddressId": 1,
+			"fullAddress": {
+				"ru": "1111222233334444, Z10K5F0, Нур-Султан, Азербайжан Мамбетова, 24, 10",
+				"kk": "1111222233334444, Z10K5F0, Нұр-Сұлтан, Әзірбайжан Мәмбетов, 24, 10",
+				"qq": null
+			},
+			"detailedAddress": {
+				"arCode": "1111222233334444",
+				"postalCode": "Z10K5F0",
+				"region": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"city": {
+					"ru": "Нур-Султан",
+					"kk": "Нұр-Сұлтан",
+					"qq": null
+				},
+				"village": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"street": {
+					"ru": "Азербайжан Мамбетова",
+					"kk": "Әзірбайжан Мәмбетов",
+					"qq": null
+				},
+				"house": {
+					"ru": "24",
+					"kk": "24",
+					"qq": null
+				},
+				"apartment": {
+					"ru": "10",
+					"kk": "10",
+					"qq": null
+				}
+			}
+		}
+	},
+	{
+		"de_audit_form": {
+			"id": 1,
+			"name": {
+				"ru": "Тематическая проверка",
+				"kk": "Тақырыптық тексеру",
+				"qq": "Taqyryptyq tekseru"
+			}
+		},
+		"de_audit_kind": {
+			"id": 8,
+			"name": {
+				"ru": "По особому порядку на основе оценки степени риска",
+				"kk": "Тәуекел дәрежесін бағалау негізінде ерекше тәртіп",
+				"qq": "Täuekelder därejesіn bağalau negіzіnde"
+			}
+		},
+		"de_audit_question": {
+			"id": 12,
+			"name": {
+				"ru": "неисполнения налогоплательщиком (налоговым агентом) уведомления налоговых органов об устранении нарушений, выявленных по результатам камерального контроля, в порядке, установленном статьей 608 Налогового кодекса",
+				"kk": "Салық кодексінің 608-бабында белгіленген тәртіпте камералды бақылау нәтижелері бойынша анықталған бұзушылықтарды жою туралы салық органдарының хабарламасын салық төлеушінің (салық агентінің) орындамауы мәселелері бойынша жоспарлы тақырыптық тексеру жүргізілетіні туралы хабарлайды",
+				"qq": "Salyq kodeksіnіŋ 608-babynda belgіlengen tärtіpte kameraldy baqylau nätijelerі boiynşa anyqtalğan būzuşylyqtardy jo turaly salyq organdarynyŋ habarlamasyn salyq töleuşіnіŋ (salyq agentіnіŋ) oryndamauy mäselelerі boiynşa josparly taqyryptyq tekseru jürgіzіletіnі turaly habarlaidy"
+			}
+		},
+		"tp_reg": {
+			"id": 1,
+			"iinBin": "889718705849",
+			"rnn": null,
+			"tpType": "FL",
+			"tpName": {
+				"ru": "Фишер Александр Маркович",
+				"kk": "Фишер Александр Маркович",
+				"qq": "Фишер Александр Маркович"
+			},
+			"tpAddressId": 1,
+			"fullAddress": {
+				"ru": "1111222233334444, Z10K5F0, Нур-Султан, Азербайжан Мамбетова, 24, 10",
+				"kk": "1111222233334444, Z10K5F0, Нұр-Сұлтан, Әзірбайжан Мәмбетов, 24, 10",
+				"qq": null
+			},
+			"detailedAddress": {
+				"arCode": "1111222233334444",
+				"postalCode": "Z10K5F0",
+				"region": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"city": {
+					"ru": "Нур-Султан",
+					"kk": "Нұр-Сұлтан",
+					"qq": null
+				},
+				"village": {
+					"ru": null,
+					"kk": null,
+					"qq": null
+				},
+				"street": {
+					"ru": "Азербайжан Мамбетова",
+					"kk": "Әзірбайжан Мәмбетов",
+					"qq": null
+				},
+				"house": {
+					"ru": "24",
+					"kk": "24",
+					"qq": null
+				},
+				"apartment": {
+					"ru": "10",
+					"kk": "10",
+					"qq": null
+				}
+			}
+		}
+	}
+]

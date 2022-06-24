@@ -1,0 +1,64 @@
+{
+    "ru": {
+        "createNoticeButton": "Создать извещение",
+        "notifications": {
+            "noticeCreate": "Данные сохранены",
+            "noticeApproval": "Данные сохранены."
+        },
+        "status": {
+            "created": "Создано",
+            "sentToApproval": "На утверждении"
+        },
+        "noticeKnpStatus": {
+            "not_sent": "Не отправлено"
+        },
+        "UEO": {
+            "yes": "Да",
+            "no": "Нет"
+        },
+        "auditForm": {
+            "label": "Форма проверки:",
+            "1": "Тематическая проверка",
+            "2": "Комплексная проверка"
+        },
+        "actions": {
+            "history": "История"
+        },
+        "historyPopup": {
+            "title": "ИСТОРИЯ ИЗМЕНЕНИЯ СТАТУСА ИЗВЕЩЕНИЯ О ПРОВЕДЕНИИ НАЛОГОВОЙ ПРОВЕРКИ"
+        },
+        "buttons": {
+            "print": "Печать",
+            "close": "Закрыть"
+        },
+        "events": {
+            "noticeCeated": "Извещение создано",
+            "noticeSentToApproval": "Извещение отправлено на утверждение"
+        },
+        "tableTitles": {
+            "rnn": "РНН",
+            "iinBin": "ИИН/БИН",
+            "noticeNumber": "Номер извещения",
+            "nocitecreatedDate": "Дата создания",
+            "deliveryDate": "Дата вручения",
+            "executionPeriod": "Срок исполнения",
+            "status": "Статус",
+            "knpStatus": "Статус отправки в КНП",
+            "isEep": "УЭО",
+            "taxpayerName": "Наименование НП",
+            "tax": "Орган государственных доходов",
+            "employee": "Служащий",
+            "chckType": "Форма проверки",
+            "caseNmbr": "Номер дела",
+            "caseOpenedDate": "Дата открытия дела",
+            "caseStatus": "Статус дела",
+            "caseClosedDate": "Дата завершения дела"
+        },
+        "employee": {
+            "position": "Налоговый инспектор",
+            "name": "Джеки Сакенович",
+            "taxCode": "6205",
+            "taxName": "УГД по Есильскому району ДГД по городу Нур-Султану"
+        }
+    }
+}
