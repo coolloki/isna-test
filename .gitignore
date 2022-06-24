@@ -1,0 +1,12 @@
+#My Backup
+*.backup
+
+# Dependency directory
+node_modules
+cypress/videos
+cypress/screenshots
+cypress/downloads
+cypress/integration/dev
+
+@Cypress private evn
+cypress.env.json
