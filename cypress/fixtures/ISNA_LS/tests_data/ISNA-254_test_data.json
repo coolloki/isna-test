@@ -1,0 +1,56 @@
+[
+    {
+        "testTittle": "Проверка открытия ЛС при Онлайн платеже не бюджет",
+        "payment": {
+            "isBudget": false,
+            "amount": "1000",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "knp": "005",
+            "vo": "01",
+            "docNumber": "Test_doc_number",
+            "assign": "Назначение_платежа"
+        },
+        "persAccount": {
+            "kbk": "903101",
+            "tax_org_code": "620201",
+            "iin_bin": "000000000029"
+        },
+        "operationParam": {
+            "de_operation_type_id": "2",
+            "de_account_op_type_id": "2",
+            "amount": "1000.000000"
+        }
+    },
+    {
+        "testTittle": "Проверка открытия ЛС при Онлайн платеже бюджет",
+        "payment": {
+            "isBudget": true,
+            "amount": "2000",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "981140001105",
+            "treasuryName": "OGD",
+            "kno": "620201",
+            "knp": "911",
+            "vo": "01",
+            "kbk": "104402",
+            "docNumber": "Test_doc_number",
+            "assign": "Назначение_платежа"
+        },
+        "persAccount": {
+            "kbk": "104402",
+            "tax_org_code": "620201",
+            "iin_bin": "000000000029"
+        },
+        "operationParam": {
+            "de_operation_type_id": "1",
+            "de_account_op_type_id": "2",
+            "amount": "2000.000000"
+        }
+    }
+]
