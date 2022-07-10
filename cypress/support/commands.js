@@ -145,7 +145,7 @@ Cypress.Commands.add('clearAuditTaxNotices', () => {
 })
 
 Cypress.Commands.add('getPaymentByExternlCode', (externalCode) => {
-  cy.task('DATABASE', { dbConfig: Cypress.env('DB').LS, sql: `select * from ri_payment where external_code='`+ externalCode + `';` }, { log: false })
+  cy.task('DATABASE', { dbConfig: Cypress.env('DB').LS, sql: `select * from ri_payment where external_code='`+ externalCode + `';` }, { log: true })
 })
 
 Cypress.Commands.add('getDocumentNumber', (documentType, taxCode) => {
