@@ -1,0 +1,218 @@
+[
+    {
+        "testTittle": "Проверка 1 шага",
+        "payment": {
+            "isBudget": false,
+            "amount": "50",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "knp": "005",
+            "vo": "01",
+            "docNumber": "Test_doc_number",
+            "assign": "Назначение_платежа",
+            "businessDaysSubtract": 2
+        },
+        "result": {
+            "document_status": 2,
+            "error_code": 0,
+            "assignment_payment": "Назначение_платежа",
+            "document_number": "Test_doc_number",
+            "rnn": "110000000016",
+            "iin_bin": "000000000029",
+            "name_tax_payer": "Tester",
+            "amount": "50",
+            "payment_source": "7",
+            "de_source_system_id": "34"
+        }
+    },{
+        "testTittle": "Проверка 2 шага",
+        "payment": {
+            "isBudget": false,
+            "amount": "50",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "knp": "005",
+            "vo": "01",
+            "docNumber": "Test_doc_number",
+            "assign": "Назначение_платежа",
+            "businessDaysSubtract": 3
+        },
+        "result": {
+            "document_status": 19,
+            "error_code": 0,
+            "assignment_payment": "Назначение_платежа",
+            "document_number": "Test_doc_number",
+            "rnn": "110000000016",
+            "iin_bin": "000000000029",
+            "name_tax_payer": "Tester",
+            "amount": "50",
+            "payment_source": "7",
+            "de_source_system_id": "34"
+        }
+    },{
+        "testTittle": "Проверка 3 шага",
+        "payment": {
+            "isBudget": false,
+            "amount": "50",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "knp": "005",
+            "vo": "66",
+            "docNumber": "Test_doc_number",
+            "assign": "Назначение_платежа"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 5,
+            "assignment_payment": "Назначение_платежа",
+            "document_number": "Test_doc_number",
+            "rnn": "110000000016",
+            "iin_bin": "000000000029",
+            "name_tax_payer": "Tester",
+            "amount": "50",
+            "payment_source": "7",
+            "de_source_system_id": "34"
+        }
+    },
+    {
+        "testTittle": "Проверка 4 шага",
+        "payment": {
+            "isBudget": false,
+            "amount": "50",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "knp": "556",
+            "vo": "01",
+            "docNumber": "Test_doc_number",
+            "assign": "Назначение_платежа"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 8,
+            "assignment_payment": "Назначение_платежа",
+            "document_number": "Test_doc_number",
+            "rnn": "110000000016",
+            "iin_bin": "000000000029",
+            "name_tax_payer": "Tester",
+            "amount": "50",
+            "payment_source": "7",
+            "de_source_system_id": "34"
+        }
+    },
+    {
+        "testTittle": "Проверка 5 шага",
+        "payment": {
+            "isBudget": false,
+            "amount": "1000",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "knp": "555",
+            "vo": "01",
+            "docNumber": "Test_doc_number",
+            "assign": "Назначение_платежа"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 10,
+            "assignment_payment": "Назначение_платежа",
+            "document_number": "Test_doc_number",
+            "rnn": "110000000016",
+            "iin_bin": "000000000029",
+            "name_tax_payer": "Tester",
+            "amount": "1000",
+            "payment_source": "7",
+            "de_source_system_id": "34"
+        }
+    },
+    {
+        "testTittle": "Проверка 6 шага",
+        "payment": {
+            "isBudget": false,
+            "amount": "1000",
+            "payerIdn": "000000000000",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "knp": "005",
+            "vo": "01",
+            "docNumber": "Test_doc_number",
+            "assign": "Назначение_платежа"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 1,
+            "assignment_payment": "Назначение_платежа",
+            "document_number": "Test_doc_number",
+            "rnn": null,
+            "iin_bin": "000000000000",
+            "name_tax_payer": "Tester",
+            "amount": "1000",
+            "payment_source": "7",
+            "de_source_system_id": "34"
+        }
+    },
+    {
+        "testTittle": "Проверка 7 шага",
+        "payment": {
+            "isBudget": false,
+            "amount": "1000",
+            "payerIdn": "000000000016",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "knp": "005",
+            "vo": "01",
+            "docNumber": "Test_doc_number",
+            "assign": "Назначение_платежа"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 2,
+            "assignment_payment": "Назначение_платежа",
+            "document_number": "Test_doc_number",
+            "rnn": null,
+            "iin_bin": "000000000016",
+            "name_tax_payer": "Tester",
+            "amount": "1000",
+            "payment_source": "7",
+            "de_source_system_id": "34"
+        }
+    },
+    {
+        "testTittle": "Проверка 8 шага",
+        "payment": {
+            "isBudget": false,
+            "amount": "1000",
+            "payerIdn": "000000000017",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "knp": "005",
+            "vo": "01",
+            "docNumber": "Test_doc_number",
+            "assign": "Назначение_платежа"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 2,
+            "assignment_payment": "Назначение_платежа",
+            "document_number": "Test_doc_number",
+            "rnn": "110000000004",
+            "iin_bin": "000000000017",
+            "name_tax_payer": "Tester",
+            "amount": "1000",
+            "payment_source": "7",
+            "de_source_system_id": "34"
+        }
+    }
+]
