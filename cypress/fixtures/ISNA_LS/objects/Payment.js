@@ -94,7 +94,9 @@ class Payment {
         xml = xml + '<reference>' + external_code + '</reference>'
         xml = xml + '<bankReference>' + external_code + '</bankReference>'
         xml = xml + '<payDate>' + payDate + '</payDate>'
-        xml = xml + '<docDate>' + docDate + '</docDate>'
+        if(!paymentParam.docDateNotExist){
+            xml = xml + '<docDate>' + docDate + '</docDate>'
+        }
         xml = xml + '<amount>' + paymentParam.amount + '</amount>'
         xml = xml + '<payerIdn>' + paymentParam.payerIdn + '</payerIdn>'
         xml = xml + '<payerName>' + paymentParam.payerName + '</payerName>'
@@ -140,8 +142,6 @@ class Payment {
                 external_code: 'референсы'
         }
      */
-
-
     sendPaymentToGTM(paymentParam) {
 
         const paymnetXML = this.#createOnlinePaymentXML(paymentParam)
