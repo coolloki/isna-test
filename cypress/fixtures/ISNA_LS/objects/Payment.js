@@ -1,5 +1,6 @@
 import SigningXML from '../../COMMON/SigningXML'
 import Commons from '../../COMMON/Commons'
+import Date from '../../COMMON/Date'
 
 class Payment {
 
@@ -12,12 +13,22 @@ class Payment {
     checkPaymentByExternalCode(expernalCode, expectations) {
         cy.getPaymentByExternlCode(expernalCode)
             .then((payments) => {
+                expect(payments.length).eq(1, 'Количество платежей ожидаем 1, по факту  ' + payments.length)
                 this.#checkPaymentParams(payments[0], expectations)
             })
     }
 
     #checkPaymentParam(payment, param, parmValue) {
-        expect(payment[param]).to.be.eq(parmValue, 'Проверка ' + param)
+        if(param === 'src_bank_file_uid' || param === 'src_pshep_file_uid' || param === 'src_file_uid' ) {
+            if(parmValue){
+                assert.isNotNull(payment[param], 'Значение в ' + param +  ' должно быть')
+            } else {
+                assert.isNull(payment[param], 'Значения в ' + param +  ' быть не должно')
+            }
+        } else {
+            expect(payment[param]).eq(parmValue, 'Проверка ' + param)
+        }
+        
     }
 
     #checkPaymentParams(payment, paramerts) {
@@ -58,6 +69,8 @@ class Payment {
     }
 
     #createOnlinePaymentXML(paymentParam) {
+        const todayDate = new Date().getTodayDate()
+
         let external_code = paymentParam.external_code
         if (!external_code) {
             external_code = new Commons().generateUUID()
@@ -65,12 +78,12 @@ class Payment {
 
         let payDate = paymentParam.payDate
         if (!payDate) {
-            payDate = new Commons().getTodayDate()
+            payDate = todayDate
         }
 
         let docDate = paymentParam.docDate
         if (!docDate) {
-            docDate = new Commons().getTodayDate()
+            docDate = todayDate
         }
 
         let bankIdn = paymentParam.bankIdn
@@ -87,11 +100,16 @@ class Payment {
         if (!bankName) {
             bankName = 'АО Народный Банк Республики Казахстан'
         }
+        
+        let reference = paymentParam.reference
+        if (!reference) {
+            reference = new Commons().generateUUID()
+        }
 
         let xml = '<notificationPayment xmlns:xsd="http://www.w3.org/2001/XMLSchema" '
             + 'xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" '
             + 'xmlns="http://payments.bee.kz/GatewayNkNotification">'
-        xml = xml + '<reference>' + external_code + '</reference>'
+        xml = xml + '<reference>' + reference + '</reference>'
         xml = xml + '<bankReference>' + external_code + '</bankReference>'
         xml = xml + '<payDate>' + payDate + '</payDate>'
         if(!paymentParam.docDateNotExist){

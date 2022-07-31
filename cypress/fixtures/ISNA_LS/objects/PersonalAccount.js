@@ -1,4 +1,4 @@
-import Commons from '../../COMMON/Commons'
+import Date from "../../COMMON/Date"
 
 class PersonalAccount {
 
@@ -38,7 +38,7 @@ class PersonalAccount {
             .then((personalAccount) => {
                 if (personalAccount[0]) {
                     const sqlScript = `update ri_pers_account 
-                    set close_date = '` + new Commons().getTodayDate() + `'
+                    set close_date = '` + new Date().getTodayDate() + `'
                     where id = ` + personalAccount[0].id + `;`
 
                     cy.task('DATABASE', { dbConfig: Cypress.env('DB').LS, sql: sqlScript }, { log: true })
