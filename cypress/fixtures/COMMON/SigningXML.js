@@ -32,11 +32,14 @@ class SigningXML {
             },
             body: this.#getXMLToSign(xml)
         }
-        return cy.request(signRequest)
-            .then((response) => {
-                return Cypress.$(Cypress.$.parseXML(response.body)).find('result').text()
-            })
+        return new Cypress.Promise((resolve, reject) => {
+            cy.request(signRequest)
+                .then(response => {
+                    resolve(Cypress.$(Cypress.$.parseXML(response.body)).find('result').text())
+                })
+        })
     }
+
 
     /**
      * Подпись XML через API модуля Аудит
@@ -53,9 +56,9 @@ class SigningXML {
             },
             body: xml
         }
-        return cy.request(signRequest)
-        .then((response) => {
-            return response.body
+        return new Cypress.Promise((resolve, reject) => {
+            cy.request(signRequest)
+                .then(response => resolve(response.body))
         })
     }
 }
