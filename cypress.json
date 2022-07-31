@@ -8,6 +8,7 @@
   "baseUrl": "http://10.202.41.136",
   "env": {
     "AUDIT_API": "http://10.202.41.134:9999/audit",
-    "LS_GTM_API": "http://10.202.41.134:8901/receiver/gtm"
+    "LS_GTM_API": "http://10.202.41.134:8901/receiver/gtm",
+    "LS_WS_API": "http://10.202.41.134:8901/ws/SubmissionReceiver"
   }
 }
