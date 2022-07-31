@@ -1,10 +1,10 @@
-const dayjs = require('dayjs')
+import Pako from 'pako'
 
 /**
  * Класс с общими командами применяемыми в разных модулях
  */
 class Commons {
-    
+
     /**
      * Генерация uuid
      * @returns возвращает uuid
@@ -21,12 +21,17 @@ class Commons {
         var uuid = s.join('')
         return uuid
     }
+
     /**
-     * Получить текущую дату
-     * @returns {string} возвращает дату в формате YYYY-MM-DD
+     * Сжатие в gzip и кодирование в base64
+     * @param {String} message - стока, которую нужно сжать
+     * @returns {String} возвращает сжатую и закодированную строку
      */
-    getTodayDate(){
-        return dayjs().format('YYYY-MM-DD')
+    getGzipMessage(message) {
+        const gzipMessage = Pako.gzip(message)
+        const base64Message = Buffer.from(gzipMessage).toString('base64')
+        return base64Message
     }
+
 }
 export default Commons

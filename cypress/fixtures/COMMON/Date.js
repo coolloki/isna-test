@@ -20,13 +20,21 @@ class Date {
      * @param {String} format Например YYYY-MM-DD или DD.MM.YYYY
      * @param {Number} days Сколько нужно отнять от текущей даты
      */
-    getbusinessDaysSubtractDate(format, days) {
+     getDateSubtractBusinessDays(format, days) {
         return dayjs().businessDaysSubtract(days).format(format)
     }
 
     getDatetoDateFormat(dateForChange) {
         const dateToUTC = dayjs(dateForChange).subtract(6, 'hour')
         return dayjs(dateToUTC).format('YYYY-MM-DDTHH:mm:ss.SSS[Z]')
+    }
+
+    /**
+    * Получить текущую дату
+    * @returns {string} возвращает дату в формате YYYY-MM-DD
+    */
+    getTodayDate() {
+        return dayjs().format('YYYY-MM-DD')
     }
 
 }
