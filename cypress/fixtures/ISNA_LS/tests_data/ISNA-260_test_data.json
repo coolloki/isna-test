@@ -1,0 +1,440 @@
+[
+    {
+        "testTittle": "Проверка 1 шага. Онлайн платеж бюджет с несуществующим ИИН 888888888888, получение error_code '1'",
+        "payment": {
+            "isBudget": true,
+            "amount": "2000",
+            "payerIdn": "888888888888",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "981140001105",
+            "treasuryName": "OGD",
+            "kno": "620201",
+            "knp": "911",
+            "vo": "01",
+            "kbk": "104402",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-260_1"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 1
+        }
+    },
+    {
+        "testTittle": "Проверка 2 шага. Онлайн платеж бюджет с не существующим КБК, получение error_code '18'",
+        "payment": {
+            "isBudget": true,
+            "amount": "2000",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "981140001105",
+            "treasuryName": "OGD",
+            "kno": "620201",
+            "knp": "911",
+            "vo": "01",
+            "kbk": "666666",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-260_2"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 18
+        }
+    },
+    {
+        "testTittle": "Проверка 3 шага. Онлайн платеж бюджет с не существующим КНП, получение error_code '3'",
+        "payment": {
+            "isBudget": true,
+            "amount": "2000",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "981140001105",
+            "treasuryName": "OGD",
+            "kno": "620201",
+            "knp": "571",
+            "vo": "01",
+            "kbk": "104402",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-260_3"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 8
+        }
+    },
+    {
+        "testTittle": "Проверка 4 шага. Онлайн платеж бюджет с несуществующим кодом документа, получение error_code '5'",
+        "payment": {
+            "isBudget": true,
+            "amount": "2000",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "000000000000",
+            "treasuryName": "OGD",
+            "kno": "620201",
+            "knp": "911",
+            "vo": "01",
+            "kbk": "104402",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-260_4"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 3
+        }
+    },
+    {
+        "testTittle": "Проверка 5 шага. Онлайн платеж бюджет с КБК у которого есть признак 'документа учета' de_doc_accounting_ext_id и которого нет в справочнике соотвествия КБК и КНП",
+        "payment": {
+            "isBudget": true,
+            "amount": "2000",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "981140001105",
+            "treasuryName": "OGD",
+            "kno": "620201",
+            "knp": "911",
+            "vo": "01",
+            "kbk": "103101",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-260_5"
+        },
+        "result": {
+            "document_status": 2,
+            "error_code": 0
+        }
+    },
+    {
+        "testTittle": "Проверка 6 шага. Онлайн платеж бюджет с КБК у которого нет признака 'документа учета' de_doc_accounting_ext_id, получение document_status '4'",
+        "payment": {
+            "isBudget": true,
+            "amount": "2000",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "981140001105",
+            "treasuryName": "OGD",
+            "kno": "620201",
+            "knp": "005",
+            "vo": "01",
+            "kbk": "105429",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-260_6"
+        },
+        "result": {
+            "document_status": 4,
+            "error_code": 0
+        }
+    },
+    {
+        "testTittle": "Проверка 7 шага. Онлайн платеж бюджет c КБК у которого есть признак 'документа учета' de_doc_accounting_ext_id, который есть в справочнике 'Сооствествие КБК и КНП'",
+        "payment": {
+            "isBudget": true,
+            "amount": "2000",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "981140001105",
+            "treasuryName": "OGD",
+            "kno": "620201",
+            "knp": "183",
+            "vo": "01",
+            "kbk": "101202",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-260_7"
+        },
+        "result": {
+            "document_status": 2,
+            "error_code": 0
+        }
+    },
+    {
+        "testTittle": "Проверка 8 шага. Онлайн платеж бюджет, получение error_code '11'",
+        "payment": {
+            "isBudget": true,
+            "amount": "2000",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "981140001105",
+            "treasuryName": "OGD",
+            "kno": "620201",
+            "knp": "005",
+            "vo": "01",
+            "kbk": "101202",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-260_8"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 11
+        }
+    },
+    {
+        "testTittle": "Проверка 9 шага. Онлайн платеж бюджет на таможенный КБК, получение document_status '25'",
+        "payment": {
+            "isBudget": true,
+            "amount": "2000",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "981140001105",
+            "treasuryName": "OGD",
+            "kno": "620201",
+            "knp": "918",
+            "vo": "01",
+            "kbk": "105281",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-260_9"
+        },
+        "result": {
+            "document_status": 25,
+            "error_code": 0
+        }
+    },
+    {
+        "testTittle": "Проверка 10 шага. Онлайн платеж бюджет, получение error_code '4'",
+        "payment": {
+            "isBudget": true,
+            "amount": "0",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "981140001105",
+            "treasuryName": "OGD",
+            "kno": "620201",
+            "knp": "911",
+            "vo": "01",
+            "kbk": "104402",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-260_10"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 4
+        }
+    },
+    {
+        "testTittle": "Проверка 11 шага. Онлайн платеж бюджет в МСУ на КБК, по пкторому ведется ЛС на уровне МСУ",
+        "payment": {
+            "isBudget": true,
+            "amount": "5",
+            "payerIdn": "000000000027",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "000640001990",
+            "treasuryName": "OGD",
+            "kno": "030203",
+            "knp": "911",
+            "vo": "01",
+            "kbk": "105430",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-260_11"
+        },
+        "result": {
+            "document_status": 2,
+            "error_code": 0
+        }
+    },
+    {
+        "testTittle": "Проверка 12 шага. Онлайн платеж бюджет в МСУ на КБК, по которому не ведется ЛС на уровне МСУ, получение error_code '23'",
+        "payment": {
+            "isBudget": true,
+            "amount": "5",
+            "payerIdn": "000000000027",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "000640001990",
+            "treasuryName": "OGD",
+            "kno": "030203",
+            "knp": "911",
+            "vo": "01",
+            "kbk": "101107",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-260_12"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 23
+        }
+    },
+    {
+        "testTittle": "Проверка 13 шага. Онлайн платеж бюджет на КБК 'Налогов на транспортные средства' в назначении платежа 'VIN1234567891011121314151617 ISNA-260_13', получение error_code = '15'",
+        "payment": {
+            "isBudget": true,
+            "amount": "33",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "981140001105",
+            "treasuryName": "OGD",
+            "kno": "620201",
+            "knp": "911",
+            "vo": "01",
+            "kbk": "104402",
+            "docNumber": "Test_doc_number",
+            "assign": "VIN1234567891011121314151617 ISNA-260_13"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 15
+        }
+    },
+    {
+        "testTittle": "Проверка 14 шага. Онлайн платеж бюджет на КБК 'Налогов на транспортные средства' в назначении платежа 'VIN444455555555444/V ISNA-260_14'",
+        "payment": {
+            "isBudget": true,
+            "amount": "33",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "981140001105",
+            "treasuryName": "OGD",
+            "kno": "620201",
+            "knp": "911",
+            "vo": "01",
+            "kbk": "104402",
+            "docNumber": "Test_doc_number",
+            "assign": "VIN444455555555444/V ISNA-260_14"
+        },
+        "result": {
+            "document_status": 2,
+            "error_code": 0,
+            "vin_code": "444455555555444"
+        }
+    },
+    {
+        "testTittle": "Проверка 15 шага. Онлайн платеж бюджет с ИИН имеющим причину снятия рег. учета 'Ликвидация', получение error_code '2'",
+        "payment": {
+            "isBudget": true,
+            "amount": "33",
+            "payerIdn": "000000000018",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "981140001105",
+            "treasuryName": "OGD",
+            "kno": "620201",
+            "knp": "911",
+            "vo": "01",
+            "kbk": "104402",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-260_15"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 2
+        }
+    },
+    {
+        "testTittle": "Проверка 16 шага. Онлайн платеж бюджет с ИИН имеющим причину снятия рег. учета 'Исключение из государственной базы данных', получение error_code '2'",
+        "payment": {
+            "isBudget": true,
+            "amount": "33",
+            "payerIdn": "000000000016",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "981140001105",
+            "treasuryName": "OGD",
+            "kno": "620201",
+            "knp": "911",
+            "vo": "01",
+            "kbk": "104402",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-260_16"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 2
+        }
+    },
+    {
+        "testTittle": "Проверка 17 шага. Онлайн платеж бюджет c КБК не принадлежит к ОГД согласно справочнику 'Виды счетов доходной части бюджета', получение error_code '12'",
+        "payment": {
+            "isBudget": true,
+            "amount": "33",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "981140001105",
+            "treasuryName": "OGD",
+            "kno": "620201",
+            "knp": "911",
+            "vo": "01",
+            "kbk": "905101",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-260_17"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 12
+        }
+    },
+    {
+        "testTittle": "Проверка 17 шага. Онлайн платеж бюджет КБК состоит в 'Группа учёта дополнительных КБК' и по основному КБК ЛС не открыт, получение error_code '16'",
+        "payment": {
+            "isBudget": true,
+            "amount": "33",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "981140001105",
+            "treasuryName": "OGD",
+            "kno": "620201",
+            "knp": "911",
+            "vo": "01",
+            "kbk": "105114",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-260_17"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 16
+        }
+    },
+    {
+        "testTittle": "Проверка 18 шага. Онлайн платеж бюджет КБК состоит в 'Налоги, по которым запрещено открытие лицевых счетов при отсутствии регистрационного учета' и ЛС не открыт, получение error_code '13'",
+        "payment": {
+            "isBudget": true,
+            "amount": "33",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "000140001813",
+            "treasuryName": "OGD",
+            "kno": "030301",
+            "knp": "911",
+            "vo": "01",
+            "kbk": "105404",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-260_18"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 13
+        }
+    }
+]
