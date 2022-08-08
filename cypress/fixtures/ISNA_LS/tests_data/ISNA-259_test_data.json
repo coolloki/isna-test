@@ -1,6 +1,6 @@
 [
     {
-        "testTittle": "Проверка 1 шага",
+        "testTittle": "Проверка 1 шага. Онлайн платеж не бюджет с дейсвтующим ИИН в назначении платежа",
         "payment": {
             "isBudget": false,
             "amount": "1",
@@ -28,7 +28,7 @@
         }
     },
     {
-        "testTittle": "Проверка 2 шага",
+        "testTittle": "Проверка 2 шага. Онлайн платеж не бюджет с 000000000000 в назначении платежа",
         "payment": {
             "isBudget": false,
             "amount": "1",
@@ -55,7 +55,34 @@
         }
     },
     {
-        "testTittle": "Проверка 3 шага",
+        "testTittle": "Проверка 3 шага. Онлайн платеж не бюджет с не дейсвтующим ИИН в назначении платежа",
+        "payment": {
+            "isBudget": false,
+            "amount": "1",
+            "payerIdn": "000000000024",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "knp": "010",
+            "vo": "01",
+            "docNumber": "Test_doc_number",
+            "assign": "888888888888 000000000029 ISNA-259_3"
+        },
+        "result": {
+            "document_status": 2,
+            "error_code": 0,
+            "kbk": "901101",
+            "tax_org_code": "620201",
+            "assignment_payment": "888888888888 000000000029 ISNA-259_3",
+            "assignment_payment_code": "010",
+            "rnn": "110000000016",
+            "iin_bin": "000000000029",
+            "name_tax_payer": "нп_ф8 нп_и8 нп_о8",
+            "amount": "1"
+        }
+    },
+    {
+        "testTittle": "Проверка 4 шага. Онлайн платеж бюджет с дейсвтующим ИИН в назначении платежа",
         "payment": {
             "isBudget": true,
             "amount": "1",
@@ -86,7 +113,7 @@
         }
     },
     {
-        "testTittle": "Проверка 4 шага",
+        "testTittle": "Проверка 5 шага. Онлайн платеж бюджет с 000000000000 в назначении платежа",
         "payment": {
             "isBudget": true,
             "amount": "1",
@@ -101,14 +128,45 @@
             "vo": "01",
             "kbk": "104402",
             "docNumber": "Test_doc_number",
-            "assign": "000000000000 000000000029 ISNA-259_4"
+            "assign": "000000000000 000000000029 ISNA-259_5"
         },
         "result": {
             "document_status": 2,
             "error_code": 0,
             "kbk": "104402",
             "tax_org_code": "620201",
-            "assignment_payment": "000000000000 000000000029 ISNA-259_4",
+            "assignment_payment": "000000000000 000000000029 ISNA-259_5",
+            "assignment_payment_code": "911",
+            "rnn": "110000000016",
+            "iin_bin": "000000000029",
+            "name_tax_payer": "нп_ф8 нп_и8 нп_о8",
+            "amount": "1"
+        }
+    },
+    {
+        "testTittle": "Проверка 6 шага. Онлайн платеж бюджет с недейсвующим ИИН в назначении платежа",
+        "payment": {
+            "isBudget": true,
+            "amount": "1",
+            "payerIdn": "000000000024",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "981140001105",
+            "treasuryName": "OGD",
+            "kno": "620201",
+            "knp": "911",
+            "vo": "01",
+            "kbk": "104402",
+            "docNumber": "Test_doc_number",
+            "assign": "888888888888 000000000029 ISNA-259_6"
+        },
+        "result": {
+            "document_status": 2,
+            "error_code": 0,
+            "kbk": "104402",
+            "tax_org_code": "620201",
+            "assignment_payment": "888888888888 000000000029 ISNA-259_6",
             "assignment_payment_code": "911",
             "rnn": "110000000016",
             "iin_bin": "000000000029",
