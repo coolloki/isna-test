@@ -13,7 +13,7 @@ describe("ISNA-255. Обработка Онлайн платежей негат�
             const date = new Date()
             
             const paymentParam = caseData.payment
-            const paymentDate = date.getbusinessDaysSubtractDate('YYYY-MM-DD', paymentParam.businessDaysSubtract)
+            const paymentDate = date.getDateSubtractBusinessDays('YYYY-MM-DD', paymentParam.businessDaysSubtract)
 
             paymentParam.external_code = external_code
             paymentParam.payDate = paymentDate
