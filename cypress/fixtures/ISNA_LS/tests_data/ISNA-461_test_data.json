@@ -1,0 +1,46 @@
+[
+    {
+        "title": "Онлайн платеж не бюджет не подтвержденный Сводом",
+        "payment": {
+            "isBudget": false,
+            "amount": "2000",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "knp": "010",
+            "vo": "01",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-461_1",
+            "confirmedBySvod": false
+        },
+        "result": {
+            "src_pshep_file_uid": false,
+            "src_bank_file_uid": true,
+            "payment_source": "7",
+            "de_source_system_id": "34"
+        }
+    },
+    {
+        "title": "Онлайн платеж не бюджет подтвержденный Сводом",
+        "payment": {
+            "isBudget": false,
+            "amount": "2000",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "knp": "010",
+            "vo": "01",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-461_2",
+            "confirmedBySvod": true
+        },
+        "result": {
+            "src_pshep_file_uid": true,
+            "src_bank_file_uid": true,
+            "payment_source": "8",
+            "de_source_system_id": "36"
+        }
+    }
+]
