@@ -1,8 +1,11 @@
 import Payment from '../../../fixtures/ISNA_LS/objects/Payment'
-import testDataSource from '../../../fixtures/ISNA_LS/tests_data/ISNA-260_test_data.json'
+import Date from '../../../fixtures/COMMON/Date'
 import Commons from '../../../fixtures/COMMON/Commons'
 
+import testDataSource from '../../../fixtures/ISNA_LS/tests_data/ISNA-260_test_data.json'
+
 const payment = new Payment()
+const date = new Date()
 //external_code и генерируются заранее для всех кейсов
 testDataSource.forEach(iteration => {
     const external_code = new Commons().generateUUID()
@@ -14,7 +17,11 @@ describe("ISNA-260. Обработка Онлайн платежей бюдже�
 
     before(() => {
         testDataSource.forEach(caseData => {
-            payment.sendPaymentToGTM(caseData.payment)
+            const paymentParam = caseData.payment
+            const paymentDate = date.getDateSubtractBusinessDays('YYYY-MM-DD', paymentParam.businessDaysSubtract)
+            paymentParam.payDate = paymentDate
+            paymentParam.docDate = paymentDate
+            payment.sendPaymentToGTM(paymentParam)
         })
         cy.wait(4500)
     })

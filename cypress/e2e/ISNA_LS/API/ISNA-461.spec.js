@@ -20,6 +20,9 @@ describe('ISNA-461. Проверка подтверждения Онлайн п�
         // и если у платежейесть признак confirmedBySvod, то добавляем платежи в массив для отправки в Своде 
         let paymentsToSvod = []
         testDataSource.forEach(oneCase => {
+            if(oneCase.payment.changeAmount){
+                oneCase.payment.amount += 2
+            }
             payment.sendPaymentToGTM(oneCase.payment)
             if (oneCase.payment.confirmedBySvod) paymentsToSvod.push(oneCase.payment)
         })

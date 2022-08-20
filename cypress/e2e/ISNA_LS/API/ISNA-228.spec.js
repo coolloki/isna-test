@@ -1,52 +1,42 @@
 import Commons from '../../../fixtures/COMMON/Commons'
 import Payment from '../../../fixtures/ISNA_LS/objects/payment'
+import Date from '../../../fixtures/COMMON/Date'
 import testDataSource from '../../../fixtures/ISNA_LS/tests_data/ISNA-228_test_data.json'
+
+const payment = new Payment()
+const todayDate = new Date().getTodayDate()
+//external_code и генерируются заранее для всех кейсов
+testDataSource.forEach(iteration => {
+    const external_code = new Commons().generateUUID()
+    iteration.payment.external_code = external_code
+})
 
 
 describe('ISNA-228 : Обработка Онлайн платежей (не бюджет) - проверка маппинга', () => {
 
     before(() => {
-        cy.getTodayDate()
+        //Отправляем платежи
+        testDataSource.forEach(caseData => {
+            payment.sendPaymentToGTM(caseData.payment)
+        })
+        //Ожидание, чтобы платежи успели обработаться
+        cy.wait(4500)
     })
 
     testDataSource.forEach((caseData) => {
 
-        it(caseData.testTittle, function () {
+        it(caseData.testTittle + ' c КНП ' + caseData.payment.knp, function () {
 
-            if (caseData.skip) {
-                cy.log(caseData.reason_of_skip)
-            }
-            else {
+            //В paymentParamToCheck помещаем свойство объекта result проверки кейса
+            const paymentParamToCheck = caseData.result
 
-                //Создание объекта платеж с доступными методами sendPaymentToGTM и checkPaymentByExternalCode
-                const payment = new Payment()
+            //Добавляем текущую дату в paymentParamToCheck 
+            paymentParamToCheck.document_date = todayDate
+            paymentParamToCheck.receipt_date = todayDate
+            paymentParamToCheck.write_off_date = todayDate
 
-                //генерируем uuid для платежа
-                const external_code = new Commons().generateUUID()
-
-                //В paymentParam помещаем свойство объекта payment одного кейса
-                const paymentParam = caseData.payment
-
-                //В paymentParamToCheck помещаем свойство объекта result проверки кейса
-                const paymentParamToCheck = caseData.result
-
-                //Добавляем к объекту paymentParam сгенерированный ренее external_code
-                paymentParam.external_code = external_code
-
-                //Отправляем платеж
-                payment.sendPaymentToGTM(paymentParam)
-
-                //Ожидание для стабильности теста
-                cy.wait(4000)
-
-                //Добавляем текущую дату в paymentParamToCheck 
-                paymentParamToCheck.document_date = this.todayDateUs
-                paymentParamToCheck.receipt_date = this.todayDateUs
-                paymentParamToCheck.write_off_date = this.todayDateUs
-
-                //Проверяем платеж
-                payment.checkPaymentByExternalCode(external_code, paymentParamToCheck)
-            }
+            //Проверяем платеж
+            payment.checkPaymentByExternalCode(caseData.payment.external_code, paymentParamToCheck)
         })
     })
 })

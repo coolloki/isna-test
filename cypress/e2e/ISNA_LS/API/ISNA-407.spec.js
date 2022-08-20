@@ -20,6 +20,10 @@ describe('ISNA-407. Проверка подтверждения Онлайн п�
         // и если у платежейесть признак confirmedBySvod, то добавляем платежи в массив для отправки в Своде 
         let paymentsToSvod = []
         testDataSource.forEach(oneCase => {
+            if(oneCase.payment.changeAmount){
+                oneCase.payment.amount += 2
+                oneCase.result.amount = oneCase.payment.amount
+            }
             payment.sendPaymentToGTM(oneCase.payment)
             if (oneCase.payment.confirmedBySvod) paymentsToSvod.push(oneCase.payment)
         })
@@ -33,15 +37,15 @@ describe('ISNA-407. Проверка подтверждения Онлайн п�
         cy.wait(4000)
     })
 
-    testDataSource.forEach(Case => {
-        it(Case.title, function () {
+    testDataSource.forEach(oneCase => {
+        it(oneCase.title, function () {
 
             svod.getActiveSvodsIdByType(svodType).then((response) => {
                 const svodId = response[0].id
-                const result = Case.result
-                if(Case.payment.confirmedBySvod) result.ri_payment_registry_pshep_id = svodId
+                const result = oneCase.result
+                if(oneCase.payment.confirmedBySvod) result.ri_payment_registry_pshep_id = svodId
 
-                payment.checkPaymentByExternalCode(Case.payment.external_code, result)
+                payment.checkPaymentByExternalCode(oneCase.payment.external_code, result)
             })
         })
     })
