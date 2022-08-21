@@ -17,6 +17,7 @@
  */
 // eslint-disable-next-line no-unused-vars
 const { Client } = require('pg')
+const { downloadFile } = require('cypress-downloadfile/lib/addPlugin')
 
 module.exports = (on, config) => {
   on('task', {
@@ -33,5 +34,7 @@ module.exports = (on, config) => {
       }
     }
   })
+
+  on('task', { downloadFile })
   return config
 }

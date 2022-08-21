@@ -10,6 +10,7 @@ module.exports = defineConfig({
     AUDIT_API: 'http://10.202.41.134:9999/audit',
     LS_GTM_API: 'http://10.202.41.134:8901/receiver/gtm',
     LS_WS_API: 'http://10.202.41.134:8901/ws/SubmissionReceiver',
+    DOWNLOAD_FILE: 'http://10.202.41.134:9999/file-store-facade/api/files/download/'
   },
   e2e: {
     // We've imported your old cypress plugins here.

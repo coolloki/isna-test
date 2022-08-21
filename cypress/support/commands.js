@@ -25,6 +25,7 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 const dayjs = require('dayjs')
+require('cypress-downloadfile/lib/downloadFileCommand')
 
 Cypress.Commands.add('kcLogin', (username, password) => {
 
