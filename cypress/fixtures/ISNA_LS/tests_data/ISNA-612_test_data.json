@@ -1,0 +1,91 @@
+[
+    {
+        "title": "Шаг 1. Проверка xml онлайн платежа бюджет",
+        "payment": {
+            "isBudget": true,
+            "amount": "2000",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "981140001105",
+            "treasuryName": "OGD",
+            "kno": "620201",
+            "knp": "911",
+            "vo": "01",
+            "kbk": "104402",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-612_1"
+        },
+        "files": {
+            "src_bank_file_uid": {
+                "amount": "2000",
+                "payerIdn": "000000000029",
+                "payerName": "Tester",
+                "bankIdn": "940140000385",
+                "bankBik": "HSBKKZKX",
+                "treasuryIdn": "981140001105",
+                "treasuryName": "OGD",
+                "kno": "620201",
+                "knp": "911",
+                "vo": "01",
+                "kbk": "104402",
+                "assign": "ISNA-612_1",
+                "docNumber": "Test_doc_number"
+                
+            }
+        }
+    },
+    {
+        "title": "Шаг 2. Проверка xml онлайн платежа бюджет подтвержденного Сводом",
+        "payment": {
+            "isBudget": true,
+            "amount": "2000",
+            "payerIdn": "000000000029",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "treasuryIdn": "981140001105",
+            "treasuryName": "OGD",
+            "kno": "620201",
+            "knp": "911",
+            "vo": "01",
+            "kbk": "104402",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-612_2",
+            "confirmedBySvod": true
+        },
+        "files": {
+            "src_bank_file_uid": {
+                "amount": "2000",
+                "payerIdn": "000000000029",
+                "payerName": "Tester",
+                "bankIdn": "940140000385",
+                "bankBik": "HSBKKZKX",
+                "treasuryIdn": "981140001105",
+                "treasuryName": "OGD",
+                "kno": "620201",
+                "knp": "911",
+                "vo": "01",
+                "kbk": "104402",
+                "docNumber": "Test_doc_number",
+                "assign": "ISNA-612_2"
+            },
+            "src_pshep_file_uid": {
+                "amount": "2000",
+                "payerIdn": "000000000029",
+                "payerName": "Tester",
+                "bankIdn": "940140000385",
+                "bankBik": "HSBKKZKX",
+                "treasuryIdn": "981140001105",
+                "treasuryName": "OGD",
+                "kno": "620201",
+                "knp": "911",
+                "vo": "01",
+                "kbk": "104402",
+                "docNumber": "Test_doc_number",
+                "assign": "ISNA-612_2"
+            }
+        }
+    }
+]
