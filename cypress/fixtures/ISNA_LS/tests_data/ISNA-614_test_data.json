@@ -1,0 +1,81 @@
+[
+    {
+        "testTittle": "Проверка 1 шага",
+        "payment": {
+            "isBudget": false,
+            "amount": "1000",
+            "payerIdn": "000000000030",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "knp": "012",
+            "vo": "01",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-614_1"
+        },
+        "result": {
+            "document_status": 2,
+            "error_code": 0,
+            "tax_org_code": "030301"
+        }
+    },
+    {
+        "testTittle": "Проверка 2 шага",
+        "payment": {
+            "isBudget": false,
+            "amount": "1000",
+            "payerIdn": "000000000031",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "knp": "012",
+            "vo": "01",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-614_2"
+        },
+        "result": {
+            "document_status": 2,
+            "error_code": 0,
+            "tax_org_code": "031601"
+        }
+    },
+    {
+        "testTittle": "Проверка 3 шага",
+        "payment": {
+            "isBudget": false,
+            "amount": "1000",
+            "payerIdn": "000000000032",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "knp": "012",
+            "vo": "01",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-614_3"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 13,
+            "tax_org_code": "582601"
+        }
+    },
+    {
+        "testTittle": "Проверка 4 шага",
+        "payment": {
+            "isBudget": false,
+            "amount": "1000",
+            "payerIdn": "000000000033",
+            "payerName": "Tester",
+            "bankIdn": "940140000385",
+            "bankBik": "HSBKKZKX",
+            "knp": "012",
+            "vo": "01",
+            "docNumber": "Test_doc_number",
+            "assign": "ISNA-614_4"
+        },
+        "result": {
+            "document_status": 3,
+            "error_code": 14
+        }
+    }
+]
